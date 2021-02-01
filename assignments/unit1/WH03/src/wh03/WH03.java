@@ -1,21 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package wh03;
+ import os
+ 
+	
+import time
+def menu():
+while True:
+    options = {0 : show_Molinuco,
+               1 : show_cotopaxi,
+               2 : show_guayaquil,
+			   3 : exit,
+if opcion == "0":
+        print(("You typed Molinuco.\n"))
 
-/**
- *
- * @author Usuario
- */
-public class WH03 {
+if opcion == "1":
+        print("You select cotopaxi\n")
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+if opcion == "2":
+	    print("You select guayaquil\n")
 
-    }
-}
+if option == "3"
+    break
