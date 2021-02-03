@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package wh09.embeddedstructures;
+package wh09.embeddednumbers;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Usuario
  */
-public class WH09EmbeddedStructures {
+public class WH09EmbeddedNumbers {
 
     /**
      * @param args the command line arguments
@@ -19,6 +19,7 @@ public class WH09EmbeddedStructures {
     public static void main(String[] args) {
         // TODO code application logic here
     
+
        Scanner scanner = new Scanner (System.in); 
        int Operation1;
        int Operation2; 
@@ -85,3 +86,4 @@ System.out.println("==== Goodbye friends====");
         
     }
 }
+
