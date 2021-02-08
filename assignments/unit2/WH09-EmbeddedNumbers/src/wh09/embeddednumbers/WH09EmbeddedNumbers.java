@@ -58,19 +58,7 @@ if(Operation1 % 2 == 0 && Operation2 % 2 == 0) {
   
 } else if (Operation1 % 7 == 0 && Operation2 % 7 == 0){
 mod = Operation1 * Operation2; 
-System.out.println("The module of -->" + Operation1 + "%" + Operation2 + "-" + mod);
-
-} else if (Operation1 % 11 == 0 && Operation2 % 11 == 0){
-for (int i = 1; i <= 12; i++) {
-tablenum1 = Operation1 * i; 
-System.out.println (Operation1 + ":*" + i + " = " + tablenum1 + "\n");
-
-}System.out.println("=================================================");
-for (int j = 1; j <= 12; j++) {
-tablenum2 = Operation2 * j; 
-System.out.println(Operation2 + " * " + j + " = " + tablenum2 + "\n");
-}
-
+    showMultiplicationTable(Operation1, Operation2);
 } else if (Operation1 % 13 == 0 && Operation2 % 13 == 0){
 divisions = Operation1 / Operation2; 
 System.out.println("The division of --> " + Operation1 + "/" + Operation2 + " = " + divisions);
@@ -85,5 +73,20 @@ option = scanner.nextLine().charAt(0);
 System.out.println("==== Goodbye friends====");
         
     }
-}
+    public static void showMultiplicationTable(int paramOperation1, int paramOperation2) {
+        int result;
+        System.out.println("The module of -->" + paramOperation1 + "%" + paramOperation2 + "-" + mod);
+
+              } else if (Operation1 % 11 == 0 && Operation2 % 11 == 0){
+              for (int i = 1; i <= 12; i++) {
+              tablenum1 = Operation1 * i; 
+              System.out.println (Operation1 + ":*" + i + " = " + tablenum1 + "\n");
+
+              }System.out.println("=================================================");
+              for (int j = 1; j <= 12; j++) {
+              tablenum2 = Operation2 * j; 
+              System.out.println(Operation2 + " * " + j + " = " + tablenum2 + "\n");
+                  }
+              }
+    }
 

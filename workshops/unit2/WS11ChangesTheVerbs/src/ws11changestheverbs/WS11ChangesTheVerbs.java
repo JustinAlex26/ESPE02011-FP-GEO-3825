@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ws10_functions;
+package ws11changestheverbs;
 
 import java.util.Scanner;
 
@@ -11,14 +11,14 @@ import java.util.Scanner;
  *
  * @author Usuario
  */
-public class WS10_Functions {
+public class WS11ChangesTheVerbs {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner input= new Scanner(System.in);
+                Scanner input= new Scanner(System.in);
         int divd = 0;
         int divr = 0;
         float quotient = 0;
@@ -63,7 +63,13 @@ public class WS10_Functions {
         }
        System.out.println("<<<Justin Vasconez>>>");
             System.out.println("===============Hasta la proxima=============="); 
+            int number = 5;
+        int fact = 0;
+        fact = factorial(number);
+        System.out.println("factorial of " + number + " is equal to -> " + fact);
+
     }
+
 
     public static float divideTwoNumbers(int dividend, int divisor) {
   
@@ -102,4 +108,17 @@ public static int showTheMultiplicationTable( int multiplyig ,  int multiplier) 
      } 
          return +product;
 }
+
+public static int factorial(int n) {
+        if (n < 0) {
+            return -1;
+        } else {
+            if (n == 0) {
+                return 1;
+            } else {
+                return (n * factorial(n - 1));
+            }
+        }
+    }
+
 }
