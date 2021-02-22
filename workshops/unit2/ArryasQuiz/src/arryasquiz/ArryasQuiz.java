@@ -18,34 +18,31 @@ public class ArryasQuiz {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int product = 0;
-        String[]HardwareSoreProducts = {"hummer","handsaw", "paint", "nails", "cement"};
-       float [] Prices = {1.2F, 1.47F, 3.5F, 0.33F, 12.5F};
-       Scanner input  = new Scanner (System.in);
-       int n;
-        System.out.println("enter the name of the products ->");
-        n= input.nextInt();
+       int totalOfProducts=0;
+    String[] products;
+    float[]prices;
+    Scanner scanner = new Scanner(System.in);
+    
+        System.out.println("Please Enter the products->");
+        totalOfProducts = scanner.nextInt();
         
-        for (int i = 0; i < n; i++) {
-            System.out.println("enter the number of the product"+ (i + 1) + " -> ");
-              product[i] = input.nextInt();
+        products = new String[totalOfProducts];
+        prices = new float [totalOfProducts];
+        
+        for (int i=0 ; i< totalOfProducts; i++){
+            scanner.nextLine();
+            System.out.println("Please enter the name of the product #" + i+ "->");
+        products[i] = scanner.nextLine();
+            System.out.println("Please enter" + products[i]+ "prices->");
+        prices[i] = scanner.nextFloat();
         }
-
-       for (int prices : product){
-           System.out.println("products of the store" + prices);
-       }
-         for (int i = 0; i < n; i++) {
-            System.out.println("products of the store" + (i + 1) + " -> " + product[i]);
-        }
-     for (String HardwareSoreProducts : HardwareSoreProducts) {
-            System.out.println("name of the products -> " + HardwareSoreProducts);
-        }
-
-        for (int i = 0; i < weightsByproducts.length ; i++) {
-            String[] weightsByproducts = null;
-            System.out.println("weight of product " + (i + 1) + " -> " + weightsByproducts[i]);
-        }
+        System.out.println(" product -> \t price ");
+    for (int i=0; i< totalOfProducts; i++) {
+        System.out.println (products[i] +" -> \t" + prices[i]);
+    }
     }
     
     
 }
+    
+

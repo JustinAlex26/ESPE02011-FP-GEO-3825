@@ -18,18 +18,18 @@ public class Q01_02222021ArraysSolution {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    int total0fplayers=0;
+    int totalOfPlayers=0;
     String[] players;
     float[]goalAverages;
     Scanner scanner = new Scanner(System.in);
     
         System.out.println("Please Enter the anoubt of players you want to record ->");
-        total0fplayers = scanner.nextInt();
+        totalOfPlayers = scanner.nextInt();
         
-        players = new String[total0fplayers];
-        goalAverages = new float [total0fplayers];
+        players = new String[totalOfPlayers];
+        goalAverages = new float [totalOfPlayers];
         
-        for (int i=0 ; i< total0fplayers; i++){
+        for (int i=0 ; i< totalOfPlayers; i++){
             scanner.nextLine();
             System.out.println("Please enter the name of player #" + i+ "->");
         players[i] = scanner.nextLine();
@@ -37,7 +37,7 @@ public class Q01_02222021ArraysSolution {
         goalAverages[i] = scanner.nextFloat();
         }
         System.out.println(" player -> \t goal average ");
-    for (int i=0; i< total0fplayers; i++) {
+    for (int i=0; i< totalOfPlayers; i++) {
         System.out.println (players[i] +" -> \t" + goalAverages[i]);
     }
     }
