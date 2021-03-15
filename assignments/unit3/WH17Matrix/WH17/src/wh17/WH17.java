@@ -42,6 +42,7 @@ public class WH17 {
         b = BasicMatrix.readMatrixElements(m, n, "B", input);
         for (int tab = 0; tab <= n / 2; tab++) {
             System.out.println("\t");
+                    
         }
         System.out.println(" A");
 
