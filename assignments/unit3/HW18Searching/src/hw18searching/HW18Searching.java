@@ -41,3 +41,33 @@ if(aux==0)
             System.out.println("not found");
     }
 }
+String[] number = new String[6];
+       number[0] = "1";
+       number[1] = "21";
+       number[2] = "15";
+       number[3] = "43";
+       number[4] = "2";
+       number[5] = "11";
+       for(int i=0; i< number.length; i++)
+        {
+            System.out.println(number[i]);
+            
+            
+    }
+    
+        System.out.println("search for a value:");
+        int valor = 0;
+        int aux = 0;
+       
+        for(int i=0; i< number.length; i++)
+        {
+        if (valor == number[i]){
+            System.out.println("The value" + valor + "position" + i );
+            aux++;
+         }
+    
+}
+if(aux==0)
+            System.out.println("not found");
+    }
+}
